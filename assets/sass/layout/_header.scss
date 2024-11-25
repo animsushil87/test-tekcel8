@@ -1,0 +1,112 @@
+// Header
+.header{ 
+  width: 100%;
+  background: $black-1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  display: grid;
+  align-content: center;
+  z-index: 999;
+  @include media-query(1399px) {
+    height: 90px;
+  }
+  @include media-query(492px) {
+    height: 80px;
+  }
+  nav{
+    align-items: center;
+    &.navbar{
+      padding: 0 64px;
+      @include media-query(767px) {
+        padding: 0 24px;
+      }
+      @include media-query(492px) {
+        padding: 0 15px;
+      }
+    }
+    .navbar-brand{
+      @include media-query(492px) {
+        padding-top: 22px;
+      }
+      img{
+        width: clamp(150px, 9.25vw, 250px);
+        @include media-query(492px) {
+          width: 220px;
+        }
+      }
+    }
+    .navbar-nav{
+      align-items: center;
+      @include media-query(1199px) {
+        padding-top :0px;
+        .cus-btn{
+          display: none;
+        }
+      }
+      .menu-item{
+        a{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+          font-family: $font-sec;
+          color: $gray-3;
+          margin-right: 32px;
+          text-transform: uppercase;
+          @include media-query(1199px) {
+            padding: 8px 0px;
+            color: $black-2;
+          }
+          &:hover{
+            color: $accent-1;
+          }
+          &.active{
+            color: $accent-1;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler{
+    color: $white;
+    border: none;
+    outline: 0;
+    padding-top: 24px;
+    font-size: 30px;
+    &:focus{
+      box-shadow: none;
+      color: $accent-1;
+    }
+    @include media-query(492px) {
+      padding-top: 22px;
+    }
+  }
+  .navbar-expand-lg,
+  .navbar-collapse {
+    justify-content: end;
+    @include media-query(992px) {
+      justify-content: center;
+      justify-content: space-between;
+    }
+  }
+  .navbar-collapse {
+    @include media-query(1199px) {
+      background: $white;
+      border-radius: 10px;
+      padding: 15px 24px;
+      z-index: 9999;
+      position: absolute;
+      top: 66px;
+      right: 64px;
+      width: 200px;
+      box-shadow: $shadow;
+    }
+    @include media-query(767px) {
+      right: 24px;
+    }
+    @include media-query(492px) {
+      right: 15px;
+    }
+  }
+}

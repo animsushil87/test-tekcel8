@@ -1,0 +1,34 @@
+.brands{
+    padding: 40px 0;
+    position: relative;
+    z-index: 50;
+    background-color: #F0F2F4;
+
+}
+.brands-slider{
+    .brand-block{
+        padding: 18px 25px;
+        background-color: $lightest-gray;
+        border-radius: 20px;
+        box-shadow: $shadow-2;
+        margin: 0 12px;
+        display: grid;
+        justify-content: center;
+        margin-bottom: 40px;
+        @include media-query(1199px) {
+            margin-bottom: 32px;
+            padding: 48px;
+        }
+        @include media-query(991px) {
+            margin-bottom: 28px;
+            padding: 32px;
+        }
+        @include media-query(767px) {
+            margin-bottom: 22px;
+            height: 200px;
+        }
+        @include media-query(492px) {
+            height: auto;
+        }
+    }
+}

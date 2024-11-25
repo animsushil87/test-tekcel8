@@ -1,0 +1,181 @@
+/*---------------------------------------------"
+Template Name: It-Fusion
+Template URL: https://uiparadox.co.uk/templates/ITfusion
+Description: It-Fusion - Multi Purpose HTML template                                             
+Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+.collapse {
+  transition: all 0.3s ease-in-out;
+  &.show {
+    background-color: #f8f9fa; // Light background for visible content
+    padding: 1rem;
+  }
+}
+
+
+
+.content-box {
+  width: 100%; // Make responsive, adjust with breakpoints if needed
+  max-height: auto; // Limit max width
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.3s ease-in-out; // Smooth transition for height changes
+}
+
+.content {
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+$accent-1: #e29a2d;
+$font-primary: 'Montserrat', sans-serif;
+$font-sec: 'Lato', sans-serif;
+$font-awesome: "Font Awesome 5 Pro";
+$transition: all 0.5s ease-in-out;
+$shadow:42px 42px 24px rgba(0, 0, 0, 0.01), 24px 24px 20px rgba(0, 0, 0, 0.03), 11px 11px 15px rgba(0, 0, 0, 0.04), 3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+$dark-shadow: 24px 24px 10px rgba(24, 25, 27, 0.01), 15px 15px 9px rgba(24, 25, 27, 0.09), 9px 9px 7px rgba(24, 25, 27, 0.3), 4px 4px 5px rgba(24, 25, 27, 0.51), 1px 1px 3px rgba(24, 25, 27, 0.59), 0px 0px 0px rgba(24, 25, 27, 0.6);
+$black: #2C2D2F;
+$black-1: #1B1C1E;
+$black-2: #0D0D0D;
+//$white: #FAFAFA;
+$gray-1: #F0F2F4;
+$gray-2: #D6D8DB;
+$gray-3: #AFB1B6;
+$gray-4: #54575C;
+$lightest-gray: #F2F2F8;
+$light-gray: #C6CBD2;
+$medium-gray: #9EA2A8;
+$dark-gray: #7A7F85;
+$white: #F8F8FF;
+$font-247: 247px;
+$font-205: 205px;
+$font-171: 171px;
+$font-143: 143px;
+$font-99: 99px;
+$font-83: 83px;
+$font-69: 69px;
+$font-57: 57px;
+$font-48: 48px;
+$font-40: 40px;
+$font-33: 33px;
+$font-28: 28px;
+$font-23: 23px;
+$font-19: 19px;
+$font-16: 16px;
+$font-13: 13px;
+$font-11: 11px;
+
+
+/* Transitions */
+$transition: all 0.5s ease;
+
+/* Gradients */
+$gradient: linear-gradient(90deg, #DCDCFF 0%, rgba(228, 255, 234, 0.60) 49.54%, #E8E8FF 99.88%);
+
+
+/* Shadows */
+$shadow: 0px 0px 0px 0px rgba(33, 38, 39, 0.05), 2px 2px 6px 0px rgba(33, 38, 39, 0.05), 7px 7px 10px 0px rgba(33, 38, 39, 0.04), 16px 16px 14px 0px rgba(33, 38, 39, 0.03), 29px 29px 16px 0px rgba(33, 38, 39, 0.01), 45px 45px 18px 0px rgba(33, 38, 39, 0.00);
+$shadow-2: 0px 0px 0px 0px rgba(0, 0, 0, 0.06), 3px 2px 8px 0px rgba(0, 0, 0, 0.06), 14px 7px 15px 0px rgba(0, 0, 0, 0.05), 31px 15px 21px 0px rgba(0, 0, 0, 0.03), 55px 27px 24px 0px rgba(0, 0, 0, 0.01), 86px 43px 27px 0px rgba(0, 0, 0, 0.00);
+$shadow-3: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 2px 0px rgba(0, 0, 0, 0.05), 3px 3px 4px 0px rgba(0, 0, 0, 0.04), 6px 6px 5px 0px rgba(0, 0, 0, 0.03), 10px 10px 6px 0px rgba(0, 0, 0, 0.01), 16px 16px 6px 0px rgba(0, 0, 0, 0.00);;
+/*-------------------------
+    Reset Styles
+-------------------------*/
+/*-------------------------
+    Responsive
+-------------------------*/
+@import "helpers/mixins";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+ 
+/*-------------------------
+    Spacing
+-------------------------*/
+@import "helpers/spacing";
+
+/*-------------------------
+    Helper Classes
+-------------------------*/
+@import "helpers/classes";
+
+/*-------------------------
+  Buttons
+-------------------------*/
+@import "elements/buttons";
+
+/*-------------------------
+  Headings
+-------------------------*/
+@import "elements/heading";
+
+/*-------------------------
+  Preloader Styles
+-------------------------*/
+@import "layout/preloader";
+
+/*-------------------------
+  Layout Styles
+-------------------------*/
+@import "layout/about";
+
+@import "layout/achievements";
+
+@import "layout/sliders";
+
+@import "layout/banner";
+
+@import "layout/contact";
+
+@import "layout/footer";
+
+@import "layout/header";
+
+@import "layout/page-title";
+
+@import "layout/portfolio";
+
+@import "layout/process";
+
+@import "layout/services";
+
+@import "layout/sidebar";
+
+@import "layout/team";
+
+@import "layout/testimonial";
+
+
+

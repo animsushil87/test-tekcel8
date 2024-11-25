@@ -1,0 +1,29 @@
+.heading{
+    margin-bottom: 64px;
+    h2{
+        font-weight: 700;
+        font-size: clamp(42px, 3.177vw, 84px);
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: $black-1;
+        margin-bottom: clamp(12px, 0.83vw, 18px);
+        @include media-query(768px) {
+            font-size: 38px;
+        }
+        @include media-query(490px) {
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+    }
+    p{
+        color: $black;
+        margin-bottom: 0;
+        br{
+            @include media-query(492px) {
+                display: none;
+            }
+
+        }
+    }
+}
+
