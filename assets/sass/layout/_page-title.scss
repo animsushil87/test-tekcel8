@@ -1,5 +1,5 @@
 .page-start-banner{
-    background: url(../media/banner/banner.png);
+    background: url(../media/about/banner.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -19,7 +19,7 @@
         font-size: 61px;
         line-height: 120%;
         letter-spacing: -0.04em; 
-        color: $white;
+        color: $accent-1;
         margin-bottom: 0;
         @include media-query(767px) {
             font-size: 50px;
