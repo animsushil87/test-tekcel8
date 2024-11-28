@@ -1,5 +1,6 @@
 .footer{
     background-color: black;
+    overflow: hidden;
  
     @include media-query(492px) {
         padding: 0 15px;

@@ -1,4 +1,5 @@
 .services{
+    
     .service-block{
         position: relative;
         margin-bottom: clamp(40px, 3.125vw, 84px);
@@ -27,6 +28,36 @@
                 color: $gray-4;
                 margin-bottom: 0;
             }
+
+        }
+        .bgimg{
+            display: block;
+            position: relative;
+            text-align: center;
+            margin-top: -90px;
+            margin-left: 60px;
+            @include media-query(767px) {
+                margin: auto;
+            }
+            @include media-query(492px) {
+                margin:auto;
+            }
+           
+        }   
+    }
+    &.ls-ser{
+        
+        background: #141414;
+        background-image: url(../media/about/expr.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat; 
+        .container{
+            margin-bottom: -50px;
+        }
+        .list1 li{
+           
+            color: aliceblue;
         }
     }
 }

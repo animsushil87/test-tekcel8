@@ -20,7 +20,24 @@ STYLE SHEET INDEXING
 
 --------------------------------------------*/
 
+.services{
 
+  &.clsme{
+    background-color: #0D0D0D;
+    background-image: url(../media/about/it-sol.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+  }
+  
+
+
+  .container{
+    margin-top: -50px;
+  }
+ 
+}
 .collapse {
   transition: all 0.3s ease-in-out;
   &.show {
