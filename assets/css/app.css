@@ -3401,12 +3401,12 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 767px) {
   .container-fluid .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 @media (max-width: 492px) {
   .container-fluid .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 
@@ -3464,12 +3464,12 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 767px) {
   .box-2 .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 @media (max-width: 492px) {
   .box-2 .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 
@@ -3527,12 +3527,12 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 767px) {
   .box-3 .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 @media (max-width: 492px) {
   .box-3 .bg-secondary {
-    padding: 80px;
+    padding: 30px;
   }
 }
 
