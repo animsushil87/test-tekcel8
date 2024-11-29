@@ -1,14 +1,44 @@
 .about{
    
     &.style-1{
+        background-color: #141414;
         background: url(../media/about/about-bg.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: left bottom;
+        background-attachment: fixed;
+        margin-top: 0;
+        @include media-query(1199px) {
+            padding: 0px 64px 50px;
+            margin:0;
+            background: none;
+        }
+        @include media-query(991px) {
+            padding: 0px 150px 50px 64px;
+            margin:0;
+            background: none;
+        }
+        @include media-query(767px) {
+            padding: 0px 48px 50px;
+            margin-top:50px;
+            background: none;
+        }
+        @include media-query(492px) {
+            padding: 0 24px 50px;
+            margin-top:30px;
+            background: none;
+        }
+        @include media-query(492px) {
+            padding: 0 15px 50px;
+            margin-top: 30px;
+            background: none;
+        }
+       
         .text-block{
             padding: 0 0 48px clamp(50px, 15.625vw, 380px);
+            margin-top: -25px;
             @include media-query(1199px) {
-                padding: 0px 64px 50px;
+                padding: 0px 30px 50px;
             }
             @include media-query(991px) {
                 padding: 0px 150px 50px 64px;
@@ -51,7 +81,7 @@
         }
         .img-block{
             padding: 0px clamp(48px, 5vw, 120px) 0 0;
-            margin-right: -80px;
+            
             @include media-query(1199px) {
                 padding: 0px;
 
@@ -84,6 +114,7 @@
                 p{
                     color: $black-2;
                     text-align: justify;
+                    
                 }
                 li{
                     font: $font-sec;

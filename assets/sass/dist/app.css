@@ -27,6 +27,30 @@ STYLE SHEET INDEXING
   background-position: left;
   background-repeat: no-repeat;
 }
+.services.clsme .accordion-button {
+  background-color: #031130;
+  color: #ffffff;
+}
+.services.clsme .accordion-button .accbtn {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.services.clsme .accordion-button img {
+  width: 30px;
+  height: 30px;
+}
+.services.clsme .accordion-button:focus {
+  background-color: #0D0D0D;
+  color: orange;
+}
+.services.clsme .accordion-button:hover {
+  background-color: #d1d2d7;
+  color: #0D0D0D;
+}
+.services.clsme .accordion-collapse {
+  transition: none;
+  overflow: hidden;
+}
 .services .container {
   margin-top: -50px;
 }
@@ -42,8 +66,6 @@ STYLE SHEET INDEXING
 .content-box {
   width: 100%;
   max-height: auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 1rem;
   overflow: hidden;
   position: relative;
@@ -2059,17 +2081,56 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   Layout Styles
 -------------------------*/
 .about.style-1 {
+  background-color: #141414;
   background: url(../media/about/about-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: left bottom;
+  background-attachment: fixed;
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  .about.style-1 {
+    padding: 0px 64px 50px;
+    margin: 0;
+    background: none;
+  }
+}
+@media (max-width: 991px) {
+  .about.style-1 {
+    padding: 0px 150px 50px 64px;
+    margin: 0;
+    background: none;
+  }
+}
+@media (max-width: 767px) {
+  .about.style-1 {
+    padding: 0px 48px 50px;
+    margin-top: 50px;
+    background: none;
+  }
+}
+@media (max-width: 492px) {
+  .about.style-1 {
+    padding: 0 24px 50px;
+    margin-top: 30px;
+    background: none;
+  }
+}
+@media (max-width: 492px) {
+  .about.style-1 {
+    padding: 0 15px 50px;
+    margin-top: 30px;
+    background: none;
+  }
 }
 .about.style-1 .text-block {
   padding: 0 0 48px clamp(50px, 15.625vw, 380px);
+  margin-top: -25px;
 }
 @media (max-width: 1199px) {
   .about.style-1 .text-block {
-    padding: 0px 64px 50px;
+    padding: 0px 30px 50px;
   }
 }
 @media (max-width: 991px) {
@@ -2126,7 +2187,6 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .about.style-1 .img-block {
   padding: 0px clamp(48px, 5vw, 120px) 0 0;
-  margin-right: -80px;
 }
 @media (max-width: 1199px) {
   .about.style-1 .img-block {
@@ -2281,14 +2341,13 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 
 .brands {
-  padding: 40px 0;
+  padding: 30px 0;
   position: relative;
   z-index: 50;
   background-color: #F0F2F4;
 }
 
 .brands-slider .brand-block {
-  padding: 18px 25px;
   background-color: #F2F2F8;
   border-radius: 20px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06), 3px 2px 8px 0px rgba(0, 0, 0, 0.06), 14px 7px 15px 0px rgba(0, 0, 0, 0.05), 31px 15px 21px 0px rgba(0, 0, 0, 0.03), 55px 27px 24px 0px rgba(0, 0, 0, 0.01), 86px 43px 27px 0px rgba(0, 0, 0, 0);
@@ -2300,24 +2359,25 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 @media (max-width: 1199px) {
   .brands-slider .brand-block {
     margin-bottom: 32px;
-    padding: 48px;
+    padding: 28px;
   }
 }
 @media (max-width: 991px) {
   .brands-slider .brand-block {
     margin-bottom: 28px;
-    padding: 32px;
+    padding: 10px;
   }
 }
 @media (max-width: 767px) {
   .brands-slider .brand-block {
-    margin-bottom: 22px;
-    height: 200px;
+    margin-bottom: 32px;
+    padding: 8px;
   }
 }
 @media (max-width: 492px) {
   .brands-slider .brand-block {
-    height: auto;
+    margin-bottom: 22px;
+    padding: 8px;
   }
 }
 
@@ -3240,6 +3300,36 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 .services .service-block .content p {
   color: #54575C;
   margin-bottom: 0;
+}
+.services .service-block .bgimg {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: -90px;
+  margin-left: 60px;
+}
+@media (max-width: 767px) {
+  .services .service-block .bgimg {
+    margin: auto;
+  }
+}
+@media (max-width: 492px) {
+  .services .service-block .bgimg {
+    margin: auto;
+  }
+}
+.services.ls-ser {
+  background: #141414;
+  background-image: url(../media/about/expr.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.services.ls-ser .container {
+  margin-bottom: -50px;
+}
+.services.ls-ser .list1 li {
+  color: aliceblue;
 }
 
 .sidebar {

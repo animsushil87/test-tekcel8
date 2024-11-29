@@ -28,7 +28,31 @@ STYLE SHEET INDEXING
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    
+    .accordion-button{
+      background-color: #031130;
+      color: #ffffff;
+      .accbtn{
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      
+    }
+    .accordion-button:focus{
+      background-color: #0D0D0D;
+      color: orange;
+    }
+    .accordion-button:hover{
+      background-color: #d1d2d7;
+      color: #0D0D0D;
+    }
+    .accordion-collapse {
+      transition: none;
+      overflow: hidden;
+  }
   }
   
 
@@ -51,8 +75,8 @@ STYLE SHEET INDEXING
 .content-box {
   width: 100%; // Make responsive, adjust with breakpoints if needed
   max-height: auto; // Limit max width
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  //border: 1px solid #ddd;
+ // border-radius: 8px;
   padding: 1rem;
   overflow: hidden;
   position: relative;
