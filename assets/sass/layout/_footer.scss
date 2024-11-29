@@ -3,17 +3,21 @@
     overflow: hidden;
  
     @include media-query(492px) {
-        padding: 0 15px;
+        padding: 18px 15px;
+        align-content: center;
     }
     .first-col{
         @include media-query(991px) {
             margin-bottom: 48px;
+            text-align: center;
         }
         .logo{
-            margin-bottom: clamp(20px, 1.25vw, 32px); 
+            margin-bottom: clamp(20px, 1.25vw, 32px);
+            text-align: center; 
             img{
                 @include short-query(992px , 1399px) {
                     width: 220px;
+                    
                 }
             }   
         }
@@ -22,6 +26,7 @@
             color: $gray-3;
             @include media-query(492px) {
                 width: 90%;
+                
             }
         }
     }

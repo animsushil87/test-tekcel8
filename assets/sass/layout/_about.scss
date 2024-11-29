@@ -101,6 +101,7 @@
         .content{
             .content-block{
                 margin-bottom: 48px;
+                padding: 15px;
                 &:last-child{
                     margin-bottom: 0;
                 }
@@ -192,12 +193,18 @@
 }
 .achievements{
     &.style-3{
-        
+        padding: 15px;
         background: #141414;
         background-image: url(../media/about/bb.png);
         background-repeat: no-repeat;
         background-size: contain; 
         background-position: center bottom;
+        @include media-query(767px) {
+            background: #141414;
+        }
+        @include media-query(492px) {
+            background: #141414;
+        }
         
     }
 }
