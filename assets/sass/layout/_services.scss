@@ -65,6 +65,19 @@
         .sr-txt{
             padding-left: 60px;
             align-content: right;
+            @include media-query(1199px) {
+                margin: auto;
+                padding: 20px;
+            }
+            @include media-query(767px) {
+                margin: auto;
+                padding: 20px;
+                
+            }
+            @include media-query(492px) {
+                margin: auto;
+                padding: 20px;
+            }
         }
         .container{
             margin-bottom: -50px;
@@ -95,15 +108,18 @@
             height: 80vh;
         }
         @include media-query(767px) {
-            height: 80vh;
+            height: 60vh;
+            background-size: contain;
             width: 100%;
-            float: left;
+            
             
         }
         @include media-query(492px) {
-            height: 80vh;
+            height: 45vh;
+            background-color: none;
             width: 100%;
-            float: left;
+            background-size: contain;
+           
         }
    }
     .bg-secondary{
@@ -160,9 +176,10 @@
             
         }
         @include media-query(492px) {
-            height: 80vh;
+            height: 45vh;
+            background-color: none;
             width: 100%;
-            float: left;
+            background-size: contain;
         }
    }
     .bg-secondary{
@@ -220,9 +237,10 @@
             
         }
         @include media-query(492px) {
-            height: 80vh;
+            height: 45vh;
+            background-color: none;
             width: 100%;
-            float: left;
+            background-size: contain;
         }
    }
     .bg-secondary{
@@ -280,9 +298,10 @@
             
         }
         @include media-query(492px) {
-            height: 80vh;
+            height: 45vh;
+            background-color: none;
             width: 100%;
-            float: left;
+            background-size: contain;
         }
    }
     .bg-secondary{

@@ -3475,6 +3475,24 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   padding-left: 60px;
   align-content: right;
 }
+@media (max-width: 1199px) {
+  .services.ls-ser .sr-txt {
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .services.ls-ser .sr-txt {
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 492px) {
+  .services.ls-ser .sr-txt {
+    margin: auto;
+    padding: 20px;
+  }
+}
 .services.ls-ser .container {
   margin-bottom: -50px;
 }
@@ -3505,16 +3523,17 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 767px) {
   .container-fluid .bg-primary {
-    height: 80vh;
+    height: 60vh;
+    background-size: contain;
     width: 100%;
-    float: left;
   }
 }
 @media (max-width: 492px) {
   .container-fluid .bg-primary {
-    height: 80vh;
+    height: 45vh;
+    background-color: none;
     width: 100%;
-    float: left;
+    background-size: contain;
   }
 }
 .container-fluid .bg-secondary {
@@ -3576,9 +3595,10 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 492px) {
   .box-2 .bg-primary {
-    height: 80vh;
+    height: 45vh;
+    background-color: none;
     width: 100%;
-    float: left;
+    background-size: contain;
   }
 }
 .box-2 .bg-secondary {
@@ -3639,9 +3659,10 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 492px) {
   .box-3 .bg-primary {
-    height: 80vh;
+    height: 45vh;
+    background-color: none;
     width: 100%;
-    float: left;
+    background-size: contain;
   }
 }
 .box-3 .bg-secondary {
@@ -3702,9 +3723,10 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 492px) {
   .box-4 .bg-primary {
-    height: 80vh;
+    height: 45vh;
+    background-color: none;
     width: 100%;
-    float: left;
+    background-size: contain;
   }
 }
 .box-4 .bg-secondary {
