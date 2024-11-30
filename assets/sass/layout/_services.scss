@@ -4,8 +4,23 @@
         position: relative;
         margin-bottom: clamp(40px, 3.125vw, 84px);
         display: flex;
+       
         align-items: flex-start;
         gap: clamp(12px, 0.83vw, 20px);
+        .bgimg{
+            margin-left: 80px;
+            @include media-query(1199px) {
+                margin: auto;
+            }
+            @include media-query(767px) {
+                margin: auto;
+                
+            }
+            @include media-query(492px) {
+                margin: auto;
+            }
+        }
+
         &:last-child{
             margin-bottom: 0;
         }
@@ -30,35 +45,32 @@
             }
 
         }
-        .bgimg{
-            display: block;
-            position: relative;
-            text-align: center;
-            margin-top: -90px;
-            margin-left: 60px;
-            @include media-query(767px) {
-                margin: auto;
-            }
-            @include media-query(492px) {
-                margin:auto;
-            }
-           
-        }   
+        
     }
     &.ls-ser{
        
-        background: #141414;
-        background-image: url(../media/about/expr.png);
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat; 
+        .service-block .bgimg{
+            padding-top: 30px;
+            margin: 0;
+            align-content: left center;
+            position: relative;
+            
+           
+        }
+        img{
+           
+            margin-right: 20px;
+            margin-top: 40px;
+        }
+        .sr-txt{
+            padding-left: 60px;
+            align-content: right;
+        }
         .container{
             margin-bottom: -50px;
+            
         }
-        .list1 li{
-           
-            color: aliceblue;
-        }
+        
     }
 }
 .container-fluid{
@@ -115,6 +127,7 @@
         }
         @include media-query(492px) {
             padding: 30px;
+            overflow: hidden;
            
         }
     }
@@ -236,5 +249,91 @@
             padding: 30px;
            
         }
+    }
+}
+
+.box-4{
+    padding: 0;
+    margin-bottom: 0;
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .row > .col-md-06 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+   .bg-primary{
+        height: 80vh;
+        background-image: url(../media/services/cld.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        @include media-query(1199px) {
+            height: 80vh;
+        }
+        @include media-query(767px) {
+            height: 80vh;
+            width: 100%;
+            float: left;
+            
+        }
+        @include media-query(492px) {
+            height: 80vh;
+            width: 100%;
+            float: left;
+        }
+   }
+    .bg-secondary{
+        height: 80vh;   
+        padding: 100px;
+        
+        align-content: center;
+        p{
+            text-align:left;
+        }
+       
+        background-color: rgb(209, 255, 240) !important;
+        @include media-query(1199px) {
+        
+            padding: 30px;
+           
+        }
+        @include media-query(767px) {
+            
+            padding: 30px;
+           
+        }
+        @include media-query(492px) {
+            padding: 30px;
+           
+        }
+    }
+}
+.benefits{
+    
+
+    .cl1{
+       
+        border-radius: 10px;
+        padding: 15px;
+       
+        background-color: #8257ef;
+    }
+    .cl2{
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #7ba004;
+    }
+    .cl3{
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #fa524d;
+    }
+    .cl4{
+        padding: 15px;
+        border-radius: 10px;
+        background-color:#034941;
     }
 }
