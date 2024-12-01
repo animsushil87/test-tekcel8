@@ -2353,7 +2353,8 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   .container-fluid .custmm {
     height: auto;
     padding: 0 15px 40px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
     background: none;
   }
 }
@@ -2362,6 +2363,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
     height: auto;
     padding: 0 15px 30px;
     margin-top: 30px;
+    margin-bottom: -10px;
     background: none;
   }
 }
@@ -2373,25 +2375,25 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm .bg-primary.cnt {
-    padding: 0px 30px 50px;
+    padding: 20px;
   }
 }
 @media (max-width: 991px) {
   .container-fluid .custmm .bg-primary.cnt {
     height: auto;
-    padding: 0 24px 50px;
+    padding: 20px;
   }
 }
 @media (max-width: 767px) {
   .container-fluid .custmm .bg-primary.cnt {
     height: auto;
-    padding: 0 24px 50px;
+    padding: 20px;
   }
 }
 @media (max-width: 492px) {
   .container-fluid .custmm .bg-primary.cnt {
     height: auto;
-    padding: 0 24px 50px;
+    padding: 20px;
   }
 }
 .container-fluid .custmm .bg-primary.cnt .title {
@@ -2431,7 +2433,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm .bg-secondary.imgg {
-    padding: 0px 30px 50px;
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -3501,7 +3503,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 
 .container-fluid {
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .container-fluid .row {
   margin-right: 0;

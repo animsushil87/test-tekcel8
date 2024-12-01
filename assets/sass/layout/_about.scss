@@ -234,13 +234,15 @@
         @include media-query(767px) {
            height: auto;
             padding: 0 15px 40px;
-            margin-top:50px;
+            margin-top:30px;
+            margin-bottom: 0;
             background: none;
         }
         @include media-query(492px) {
             height: auto;
             padding: 0 15px 30px;
             margin-top:30px;
+            margin-bottom: -10px;
             background: none;
         }
         
@@ -253,19 +255,19 @@
             padding: 0 0 48px clamp(50px, 15.625vw, 380px);
             margin-top: 0;
             @include media-query(1199px) {
-                padding: 0px 30px 50px;
+                padding: 20px;
             }
             @include media-query(991px) {
                 height: auto;
-                padding: 0 24px 50px;
+                padding: 20px;
             }
             @include media-query(767px) {
                 height: auto;
-                padding: 0 24px 50px;
+                padding: 20px;
             }
             @include media-query(492px) {
                 height: auto;
-                padding: 0 24px 50px;
+                padding: 20px;
             }
            
             .title{
@@ -301,7 +303,7 @@
         &.imgg{
             background: none !important;
             @include media-query(1199px) {
-                padding: 0px 30px 50px;
+                display: none;
             }
             @include media-query(991px) {
                 display: none;
