@@ -19,7 +19,7 @@ STYLE SHEET INDEXING
 |___ END STYLE SHEET INDEXING
 
 --------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .services.clsme {
   background-color: #0D0D0D;
   background-image: url(../media/about/it-sol.png);
@@ -81,6 +81,18 @@ STYLE SHEET INDEXING
 /*-------------------------
     Fonts
 -------------------------*/
+@font-face {
+  font-family: "Aptos";
+  src: url("../assets/css/fonts/aptos/Aptos.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("../assets/css/fonts/aptos/Aptos-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 /*-------------------------
     Variables
 -------------------------*/
@@ -137,7 +149,7 @@ section:after {
   padding: 0 8px 8px;
   font-weight: 400;
   font-size: clamp(16px, 1vw, 22px);
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 150%;
   letter-spacing: 0.03em;
   position: relative;
@@ -233,7 +245,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #2C2D2F;
   background: #F8F8FF;
   font-weight: 400;
@@ -310,7 +322,7 @@ h6 {
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 16px 0;
   line-height: 150%;
@@ -356,7 +368,7 @@ span {
 
 b,
 strong {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @media (max-width: 380px) {
@@ -1525,7 +1537,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 
 .font-sec {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .radius-10 {
@@ -1578,7 +1590,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   font-weight: 700;
   font-size: clamp(14px, 1.094vw, 22px);
   line-height: 140%;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding: clamp(8px, 0.625vw, 16px) clamp(24px, 1.66vw, 40px);
   transition: all 0.5s ease;
   text-transform: uppercase;
@@ -1629,7 +1641,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   width: 100%;
   padding: 20px 0;
   background: #e29a2d;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: capitalize;
   border: 2px solid #e29a2d;
   border-radius: 5px;
@@ -1717,7 +1729,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #51e4dc;
+  background: #e4b851;
   border-radius: 6px;
   transform: rotate(45deg);
   opacity: 70%;
@@ -2226,7 +2238,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   text-align: justify;
 }
 .about.style-2 .content .content-block li {
-  font: "Lato", sans-serif;
+  font: "Josefin Sans", sans-serif;
 }
 .about.style-2 .video {
   border-radius: 25px;
@@ -2335,7 +2347,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm {
-    height: 50vh;
+    height: auto;
     padding: 0px 64px 50px;
     margin: 0;
     background: none;
@@ -2352,16 +2364,18 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 @media (max-width: 767px) {
   .container-fluid .custmm {
     height: auto;
-    padding: 0 15px 50px;
-    margin-top: 50px;
+    padding: 0 15px 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
     background: none;
   }
 }
 @media (max-width: 492px) {
   .container-fluid .custmm {
     height: auto;
-    padding: 0 15px 50px;
+    padding: 0 15px 30px;
     margin-top: 30px;
+    margin-bottom: -10px;
     background: none;
   }
 }
@@ -2373,25 +2387,25 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm .bg-primary.cnt {
-    padding: 0px 30px 50px;
+    padding: 20px;
   }
 }
 @media (max-width: 991px) {
   .container-fluid .custmm .bg-primary.cnt {
-    height: 40vh;
-    padding: 0 24px 50px;
+    height: auto;
+    padding: 20px;
   }
 }
 @media (max-width: 767px) {
   .container-fluid .custmm .bg-primary.cnt {
-    height: 40vh;
-    padding: 0 24px 50px;
+    height: auto;
+    padding: 20px;
   }
 }
 @media (max-width: 492px) {
   .container-fluid .custmm .bg-primary.cnt {
-    height: 60vh;
-    padding: 0 24px 50px;
+    height: auto;
+    padding: 20px;
   }
 }
 .container-fluid .custmm .bg-primary.cnt .title {
@@ -2431,7 +2445,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm .bg-secondary.imgg {
-    padding: 0px 30px 50px;
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -2600,7 +2614,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   font-weight: 400;
   font-size: clamp(15px, 1vw, 24px);
   line-height: 140%;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: clamp(32px, 2.5vw, 64px);
   color: #F8F8FF;
   width: 90%;
@@ -2677,7 +2691,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   font-weight: 400;
   font-size: clamp(12px, 1.1vw, 20px);
   line-height: 140%;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: clamp(32px, 2.5vw, 64px);
   color: #e29a2d;
   width: 100%;
@@ -2894,7 +2908,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .footer .bottom-content .page-links .menu-item a {
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(12px, 1.012vw, 20px);
   line-height: 140%;
   color: #AFB1B6;
@@ -2995,7 +3009,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #AFB1B6;
   margin-right: 32px;
   text-transform: uppercase;
@@ -3141,7 +3155,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   line-height: 140%;
   color: #e29a2d;
   padding-top: 10px;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 @media (max-width: 492px) {
   .portfolio .detail-portfolio-box .content-box .upper-row span {
@@ -3194,7 +3208,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   font-weight: 400;
   font-size: 21px;
   line-height: 140%;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding: 0 0 8px;
 }
 @media (max-width: 575px) {
@@ -3501,7 +3515,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 
 .container-fluid {
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .container-fluid .row {
   margin-right: 0;
@@ -3782,7 +3796,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   border-radius: 10px;
 }
 .sidebar .title {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 23px;
   line-height: 130%;
@@ -3796,7 +3810,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   border: 1px solid #2C2D2F;
   border-radius: 5px;
   padding: 21.5px 24px;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -3856,7 +3870,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   cursor: pointer;
 }
 .sidebar .slider-track p {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -3875,7 +3889,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   cursor: pointer;
 }
 .sidebar .form-group label {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
   cursor: pointer;
   font-weight: 400;
@@ -3990,7 +4004,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   margin-bottom: 0;
   letter-spacing: 0.03em;
   color: #54575C;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 .team .team-box:hover .img-block img {
   -webkit-transform: scale(1.1);
