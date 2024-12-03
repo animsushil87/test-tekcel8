@@ -91,7 +91,23 @@ STYLE SHEET INDEXING
   }
 }
 
+#imageToShow {
+  //border: 2px solid red; // Bootstrap primary color
+  border-radius: 8px;
+  max-width: 85%;
+  margin-top: 1rem;
+  
+}
 
+#showImageBtn {
+  background-color: #e29a2d; // Bootstrap secondary color
+  &:hover {
+    background-color: darken(#e29a2d, 10%);
+  }
+}
+.cp-btn{
+  margin-bottom: 50px;
+}
 
 
 /*-------------------------

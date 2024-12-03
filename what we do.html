@@ -298,7 +298,13 @@
                 </div>
                 <!-- services Area end -->
 
-                
+                <div class="container cp-btn text-center mt-5">
+                    <h1>CAPABILITY STATEMENT</h1>
+                    <button id="showImageBtn" class="btn btn-primary">CLICK HERE</button>
+                    <div id="imageContainer" class="mt-3 d-none">
+                      <img id="imageToShow" src="assets/media/services/cp-st.png" alt="Example Image" class="img-fluid">
+                    </div>
+                </div>
 
                
                 <!-- footer Area start -->
@@ -357,6 +363,12 @@
             <script src="assets/js/vendor/smooth-scrollbar.js"></script>
             <!-- Site Scripts -->
             <script src="assets/js/app.js"></script>
+            <script>
+                document.getElementById('showImageBtn').addEventListener('click', function () {
+                  const imageContainer = document.getElementById('imageContainer');
+                  imageContainer.classList.toggle('d-none'); // Toggles visibility
+                });
+            </script>
     </body>
 
 </html>

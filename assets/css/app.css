@@ -78,6 +78,23 @@ STYLE SHEET INDEXING
   line-height: 1.5;
 }
 
+#imageToShow {
+  border-radius: 8px;
+  max-width: 85%;
+  margin-top: 1rem;
+}
+
+#showImageBtn {
+  background-color: #e29a2d;
+}
+#showImageBtn:hover {
+  background-color: rgb(193.3054393305, 127.0292887029, 26.6945606695);
+}
+
+.cp-btn {
+  margin-bottom: 50px;
+}
+
 /*-------------------------
     Fonts
 -------------------------*/
