@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 80px;
   display: grid;
   align-content: center;
   z-index: 999;
@@ -33,7 +33,7 @@
       img{
         width: clamp(150px, 9.25vw, 250px);
         @include media-query(492px) {
-          width: 220px;
+          width: 140px;
         }
       }
     }
