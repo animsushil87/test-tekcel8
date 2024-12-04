@@ -1681,7 +1681,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .heading h2 {
   font-weight: 700;
-  font-size: clamp(42px, 3.177vw, 84px);
+  font-size: clamp(40px, 2.177vw, 80px);
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #1B1C1E;
@@ -2360,7 +2360,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   background-position: left bottom;
   background-attachment: fixed;
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 39px;
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm {
@@ -2427,7 +2427,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .container-fluid .custmm .bg-primary.cnt .title {
   font-weight: 700;
-  font-size: clamp(48px, 3.177vw, 72px);
+  font-size: clamp(40px, 2.177vw, 80px);
   line-height: 120%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
