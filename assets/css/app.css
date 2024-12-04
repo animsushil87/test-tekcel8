@@ -2360,7 +2360,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   background-position: left bottom;
   background-attachment: fixed;
   margin-top: 0;
-  padding-top: 39px;
+  padding-top: 37px;
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm {
