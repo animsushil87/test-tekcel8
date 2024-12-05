@@ -26,12 +26,15 @@
             gtag('js', new Date());
             
             gtag('config', 'UA-266165434-1');
+            window.addEventListener("load", function () {
+            document.querySelector(".preloader").style.display = "none";
+         });
         </script>
     </head>
 
     <body class="ui-smooth-scroll">
         <!-- Preloader -->
-        <div id="preloader">
+        <div class="preloader">
             <div class="banter-loader">
                 <div class="banter-loader__box"></div>
                 <div class="banter-loader__box"></div>
@@ -195,7 +198,7 @@
                                 <div class="heading">
                                     <h2 style="color: rgb(225, 153, 45);">OUR PUBLISHED WORK</h2>
                                     
-                                        <p style="color: aliceblue;"><b>Tekcel8's thought leadership extends to research and publications, covering critical topics such as:</b></p>
+                                        <p style="color: aliceblue;">Tekcel8's thought leadership extends to research and publications, covering critical topics such as:</p>
                                         <br><br>
                                         <li style="color: aliceblue;">Agile methodologies for improved product management.</li>
                                         <li style="color: aliceblue;">The critical role of IoT in the education sector.</li>
@@ -266,8 +269,8 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 third-col">
                                 <ul class="list-unstyled links">
-                                    <li><a href="tel:123456789"><i class="fal fa-phone-alt"></i>+1 703-337-1983</a></li>
-                                    <li><a href="mailto:info@gmail.com"><i class="fal fa-envelope"></i>info@tekcel8.com</a></li>
+                                    <li><a href="tel:+1 703-337-1983"><i class="fal fa-phone-alt"></i>+1 703-337-1983</a></li>
+                                    <li><a href="mailto:info@tekcel8.com"><i class="fal fa-envelope"></i>info@tekcel8.com</a></li>
                                     <li><span><i class="fal fa-map-marker-alt"></i> 14901 Bogle Drive, Suite 205, Chantilly,<br> Virginia 20151, United States</span></li>
                                 </ul>
                             </div>
@@ -280,6 +283,7 @@
                                <li class="menu-item"><a href="./what we do.html">what we do</a></li> 
                                 <li class="menu-item"><a href="./contact.html">Contact</a></li>
                                 <li class="menu-item"><a href="./privacy policy.html">privacy policy</a></li>
+                                <li class="menu-item"><a href="./capability statement.html">capability statement</a></li>
                                                           
                             </ul>
                             <ul class="footer-social-icon">

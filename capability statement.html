@@ -28,6 +28,7 @@
             gtag('js', new Date());
             
             gtag('config', 'UA-266165434-1');
+
             window.addEventListener("load", function () {
             document.querySelector(".preloader").style.display = "none";
          });
@@ -51,10 +52,8 @@
                 <div class="banter-loader__box"></div>
             </div>
         </div>
-        preloader old ends-->
-
+        Preloader end -->
         <div class="preloader">
-            
             <div class="banter-loader">
                 <div class="banter-loader__box"></div>
                 <div class="banter-loader__box"></div>
@@ -67,6 +66,7 @@
                 <div class="banter-loader__box"></div>
             </div>
         </div>
+
         <!-- Back To Top Start -->
         <a href="#main-wrapper" id="backto-top" class="back-to-top">
             <i class="fas fa-angle-up"></i>
@@ -92,65 +92,22 @@
                     </nav>
                 </header>
                 <!-- Header Area end -->
-
-                <!-- Page Banner start -->
+                
                 <div class="page-start-banner">
                     <div class="container">
-                        <h2 class="title">PRIVACY POLICY</h2>
+                        <h2 class="title">CAPABILITY STATEMENT</h2>
                     </div>
                 </div>
-                
-                 <!-- Benefits Area start -->
-                 <section class="benefits pt-72 pb-72">
-                    <div class="container">
-                        <div class="heading text-left">
-                            <h4>Who We Are</h4>
-                            <p class="text-left">Our website address is: <a href="https://www.tekcel8.com.">https://www.tekcel8.com</a></p>
-                            <br><br>
-                            <h4>Comments</h4>
-                            <p class="text-left">When visitors leave comments on the site, we collect the data provided in the comments form, along with the visitor’s IP address and browser user agent string to help detect spam.
 
-                                An anonymized string created from your email address (called a hash) may be provided to the Gravatar service to check if you are using it.</p>
-                            <br><br>
-                            <h4>Media</h4>
-                            <p class="text-left">If you upload images to the website, avoid uploading images with embedded location data (EXIF GPS). Visitors to the site can download and extract location data from images posted on the website.</p>
-                            <br><br>
-                            <h4>Cookies</h4>
-                            <p class="text-left">If you leave a comment on our site, you may opt-in to saving your name, email address, and website in cookies for your convenience. These cookies will last for one year.
-
-                                If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
-                                
-                                When you log in, we will also set up cookies to save your login information and screen display preferences. Login cookies last for two days, while screen option cookies last for a year. If you select “Remember Me,” your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
-                                
-                                If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after one day.</p>
-                            <br><br>
-                            <h4>Embedded Content from Other Websites</h4>
-                            <p class="text-left">Articles on this site may include embedded content (e.g., videos, images, articles, etc.). Embedded content from other websites behaves as if the visitor has visited the original website.
-
-                                These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction if you have an account and are logged in to that website.</p>
-                            <br><br>
-                            <h4>Who We Share Your Data With</h4>
-                            <p class="text-left">If you request a password reset, your IP address will be included in the reset email.</p>
-                            <br><br>
-                            <h4>How Long We Retain Your Data</h4>
-                            <p class="text-left">If you leave a comment, the comment and its metadata are retained indefinitely. This allows us to recognize and approve any follow-up comments automatically without holding them in a moderation queue.
-
-                                    For users who register on our website (if any), we store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>           
-                            <br><br>
-                            <h4>What Rights You Have Over Your Data</h4>
-                            <p class="text-left">If you have an account on this site or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided. You can also request that we erase any personal data we hold about you, except for data we are obliged to retain for administrative, legal, or security purposes.</p>
-                                    
-                            <br><br>
-                            <h4>Where Your Data is Sent</h4>
-                            <p class="text-left">Visitor comments may be checked through an automated spam detection service.</p>
-                           
-                       
-                        </div>
-                       
+                <div class="container cp-btn text-center mt-5">
+                    <h1>CAPABILITY STATEMENT</h1>
+                    <button id="showImageBtn" class="btn btn-primary">CLICK HERE</button>
+                    <div id="imageContainer" class="mt-3 d-none">
+                      <img id="imageToShow" src="assets/media/services/cp-st.png" alt="Example Image" class="img-fluid">
                     </div>
-                </section>
-                <!-- Benefits Area end -->
-    
+                </div>
+
+                
                 <!-- footer Area start -->
                 <footer class="footer pt-72">
                     <div class="container">
@@ -182,8 +139,8 @@
                                 <li class="menu-item"><a href="./who we are.html" >who we are</a></li>
                                 <li class="menu-item"><a href="./what we do.html">what we do</a></li> 
                                 <li class="menu-item"><a href="./contact.html">Contact</a></li>
-                                <li class="menu-item"><a href="./privacy policy.html" class="active">privacy policy</a></li>
-                                <li class="menu-item"><a href="./capability statement.html">capability statement</a></li>
+                                <li class="menu-item"><a href="./privacy policy.html">privacy policy</a></li>
+                                <li class="menu-item"><a href="./capability statement.html" class="active">capability statement</a></li>
                                                           
                             </ul>
                             <ul class="footer-social-icon">
@@ -206,6 +163,12 @@
             <script src="assets/js/vendor/smooth-scrollbar.js"></script>
             <!-- Site Scripts -->
             <script src="assets/js/app.js"></script>
+            <script>
+                document.getElementById('showImageBtn').addEventListener('click', function () {
+                  const imageContainer = document.getElementById('imageContainer');
+                  imageContainer.classList.toggle('d-none'); // Toggles visibility
+                });
+            </script>
     </body>
 
 </html>

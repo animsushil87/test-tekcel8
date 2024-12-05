@@ -114,7 +114,7 @@
                 }
                 p{
                     color: $black-2;
-                    text-align: justify;
+                    text-align: left;
                     
                 }
                 li{
@@ -193,7 +193,7 @@
 }
 .achievements{
     &.style-3{
-        padding: 15px;
+        padding: 25px;
         background: #141414;
         background-image: url(../media/about/bb.png);
         background-repeat: no-repeat;

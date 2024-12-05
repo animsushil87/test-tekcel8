@@ -92,7 +92,11 @@ STYLE SHEET INDEXING
 }
 
 .cp-btn {
+  display: block;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 50px;
+  margin-top: 80px;
 }
 
 /*-------------------------
@@ -1681,7 +1685,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .heading h2 {
   font-weight: 700;
-  font-size: clamp(42px, 3.177vw, 84px);
+  font-size: clamp(40px, 2.177vw, 80px);
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #1B1C1E;
@@ -2360,7 +2364,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   background-position: left bottom;
   background-attachment: fixed;
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 37px;
 }
 @media (max-width: 1199px) {
   .container-fluid .custmm {
@@ -2427,7 +2431,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 .container-fluid .custmm .bg-primary.cnt .title {
   font-weight: 700;
-  font-size: clamp(48px, 3.177vw, 72px);
+  font-size: clamp(40px, 2.177vw, 80px);
   line-height: 120%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -2736,7 +2740,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
     height: 75vh;
   }
   .video-banner .banner-content h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .video-banner .banner-content p {
     font-size: 1rem;
@@ -2967,7 +2971,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 80px;
   display: grid;
   align-content: center;
   z-index: 999;
@@ -3008,7 +3012,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 }
 @media (max-width: 492px) {
   .header nav .navbar-brand img {
-    width: 220px;
+    width: 140px;
   }
 }
 .header nav .navbar-nav {
@@ -3099,7 +3103,7 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 80px;
   height: clamp(280px, 20.833vw, 500px);
   display: grid;
   align-content: center;
